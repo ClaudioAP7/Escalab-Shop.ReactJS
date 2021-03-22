@@ -41,10 +41,15 @@ class App extends React.Component{
   }
 
   render(){
-    /* return (
-        // 1:14:31
-    ) */
-  }
+    return (
+      <div>
+        <Header currentUser = { this.state.currentUser }/>
+        <Switch>
+          <Route exact path='/' component={Homepage} />
+        </Switch>
+      </div>
+    );
+  };
 }
 
 export default App;
